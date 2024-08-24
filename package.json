@@ -3,17 +3,18 @@
     "private": false,
     "version": "0.0.0",
     "type": "module",
-    "proxy": "http://localhost:5174",
+    "proxy": "http://localhost:1123",
     "scripts": {
-        "party": "concurrently 'yarn:bar' 'yarn:foo'",
-        "foo": "vite",
+        "dev": "concurrently -c 'auto' 'yarn:client' 'yarn:server'",
+        "client": "vite",
         "build": "vite build",
         "preview": "vite preview",
-        "bar": "node ./server/index.js"
+        "server": "node ./server/index.js"
     },
     "dependencies": {
         "@testing-library/jest-dom": "^6.4.8",
         "@testing-library/react": "^16.0.0",
+        "body-parser": "^1.20.2",
         "concurrently": "^8.2.2",
         "cors": "^2.8.5",
         "express": "^4.19.2",

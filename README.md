@@ -1,9 +1,9 @@
 # BessedDrest's React + Vite Boilerplate
 
-* React
-* Vite
-* Client Port: 5173
-* Server Port: 5174
-* debounce()
-* Prettier
-* .env file
+- React
+- Vite
+- Client Port: 1122
+- Server Port: 1123
+- debounce()
+- Prettier
+- .env file

@@ -1,11 +1,11 @@
 import express from 'express'
 import cors from 'cors'
+import bodyParser from 'body-parser'
 import mockData from '../mock/data.json' assert { type: 'json' }
 
-const VITE_FOO = import.meta.VITE_FOO
+const VITE_API = import.meta.VITE_API
 const app = express()
-const bodyParser = express.bodyParser()
-const PORT = 5174
+const PORT = 1123
 
 app.use(bodyParser.json())
 app.use(cors())
